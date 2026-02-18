@@ -54,7 +54,7 @@ async def _(client, callback_query):
             )
             CONFIRM_PAYMENT.remove(get.id)
             buttons = [
-                [InlineKeyboardButton("📞 ᴏᴡɴᴇʀ", url="https://t.me/")]nfstoreid
+                [InlineKeyboardButton("📞 ᴏᴡɴᴇʀ", url="https://t.me/nfstoreid")]
             ]
             return await bot.send_message(
                 user_id,
