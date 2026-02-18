@@ -1,0 +1,38 @@
+o
+
+
+     Ssio   �                    @   sb   d d l Z d d l Z d d l Z d d l T d Z d Z g d � Z g d � Z g d � Z g d � Z d Z
+e � d
+� d d � � Z
+d S )
+�    N) � *u    sᴛᴏʀʏ ᴀɴɪᴍᴇ+z�
+<blockquote><b>Bantuan Story Anime Voice
+
+perintah :
+<code>{0}storyanime</code>
+- Cerita anime + voice anime otomatis (SFW)</b></blockquote>
+) � Aiko� Haru� Ren� Mika� Sora� Yuki� Akira� Hina) z di sekolah sakura yang tenangz!di kota futuristik yang bercahayaz di desa kecil dekat pegununganz di dunia sihir penuh misteriz di festival musim panas) z menyimpan rahasia besarz menghadapi ujian yang sulitz bertemu teman lama yang berubahz(harus memilih antara mimpi dan kenyataanz#tersesat dalam kejadian tak terduga) z'dan menemukan arti persahabatan sejati.z!yang mengubah hidupnya selamanya.z dan memulai petualangan baru.z!dengan senyuman dan harapan baru.z!serta janji untuk tidak menyerah.z*https://translate.google.com/translate_tts�
+storyanimec            
+   
+   �   s\   � z�t � t � } t � t � } t � t � } t � t � } | � d | � d | � d | � d | � � } | � d | � � � I d H   d | d d d � } d
+d i } t j t | | d d
+� } | j
+d k rS| � d � I d H W S d }
+t |
+d � � } | � | j
+�   W d     �   n 1 skw       Y   | j | j j |
+d | j d � I d H   t j � |
+� r�t � |
+�   W d S W d S   t y�  }   z | � d | � � � I d H   W Y d } ~ d S d } ~ w w ) Nz  hidup z . Suatu hari, ia z . Di tengah semua itu, z, belajar untuk percaya pada dirinya sendiri u    📖 Story Anime
+
+z UTF-8� jaz tw-ob) � ie� q� tl� clientz
+User-Agentz Mozilla/5.0�    ) � params� headers� timeout��   u    ❌ Gagal membuat voice animez storyanime_voice.mp3� wbu    🎧 Voice Anime Story) � voice� caption� reply_to_message_idu    ❌ Error: ) � random� choice� TOKOH� SETTING� KONFLIK� AKHIR� reply� requests� get� TTS_API� status_code� open� write� content�
+send_voice� chat� id� os� path� exists� remove� Exception)
+r    � message� t� s� k� a� storyr    r    � r�
+voice_file� f� e� r:   �6/root/botcreateubot_bot/PyroUbot/modules/storyanime.py� storyanime_voice_cmd.   sT    �  
+ 
+ 
+ 
+      �   �   � �           �   �  
+          �           �     �  $  � �r<   ) r    r!   r+   � PyroUbot�
+MODULE� HELPr    r    r    r    r#   � PY� UBOTr<   r:   r:   r:   r;   � <module>    s

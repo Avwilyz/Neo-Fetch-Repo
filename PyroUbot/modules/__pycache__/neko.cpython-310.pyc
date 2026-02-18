@@ -1,0 +1,16 @@
+o
+
+
+    Jsi�   �                    @   s2   d d l Z d d l T d Z d Z d Z e � d � d d � � Z d S ) �    N) � *u    ɴᴇᴋᴏzo
+<blockquote><b>Bantuan Neko
+
+perintah :
+<code>{0}neko</code>
+- Kirim foto neko random (safe)</b></blockquote>
+z https://api.waifu.pics/sfw/neko� nekoc                
+   �   s�   � z+t j t d d � � � } | � d � } | s | � d � I d H W S | j | j j | d | j d � I d H   W d S   t yJ  }   z | � d | � � � I d H   W Y d } ~ d S d } ~ w w ) N�
+   ) � timeout� urlu    ❌ Gagal mengambil nekou    🐱 Neko random buat kamu~) � photo� caption� reply_to_message_idu    ❌ Error: ) � requests� get� NEKO_API� json� reply�
+send_photo� chat� id� Exception) � client� message� res� img� e� r    �0/root/botcreateubot_bot/PyroUbot/modules/neko.py� neko_cmd    s     �    
+                �  $  � �r    ) r
+   � PyroUbot�
+MODULE� HELPr    � PY� UBOTr    r    r    r    r    � <module>    s
